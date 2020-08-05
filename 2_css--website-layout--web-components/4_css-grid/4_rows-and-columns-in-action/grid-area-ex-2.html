@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid Area Examples</title>
+    <style>
+        body {
+            background-color: #444;
+            color: #fffff8
+            font-size: 27px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 30px 300px;
+            grid-template-rows: 250px 600px 30px;
+            grid-template-areas:
+                "hd hd hd hd hd hd hd hd"
+                "sd sd main main main main main main"
+                "ft ft ft ft ft ft ft ft";
+            border: 2px solid yellow;
+        }
+
+        .box {
+            border: 1px solid red;
+            background-color: #f8fa9d;
+        }
+
+        #header {
+            grid-area: hd;
+        }
+
+        #sidebar {
+            grid-area: sd;
+        }
+
+        #content {
+            grid-area: main;
+        }
+
+        #footer {
+            grid-area: ft;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header class="box" id="header">Header</header>
+    <div class="box" id="sidebar">Sidebar</div>
+    <div class="box" id="content">Content</div>
+    <footer class="box" id="footer">Footer</footer>
+</div>
+</body>
+</html>
