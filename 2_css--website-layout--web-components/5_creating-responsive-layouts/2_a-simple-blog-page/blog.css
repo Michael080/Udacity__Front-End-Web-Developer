@@ -10,6 +10,7 @@
     grid-template-areas:
             "hd hd hd hd hd hd hd hd"
             "feat feat feat feat feat feat feat feat"
+            "main main main main main main main main"
             "ft ft ft ft ft ft ft ft";
 }
 
