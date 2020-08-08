@@ -36,5 +36,8 @@ body {
 
 .content {
     grid-area: main;
+    background-image: url('images/waterfall2.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
